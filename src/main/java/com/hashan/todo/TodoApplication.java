@@ -10,6 +10,6 @@ public class TodoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TodoApplication.class, args);
 		System.out.println("\nPATH -> http://localhost:8081/api");
-		System.out.println("\nSWAGGER -> http://localhost:8080/swagger-ui.html\n");
+		System.out.println("\nSWAGGER -> http://localhost:8081/api/swagger-ui.html\n");
 	}
 }
