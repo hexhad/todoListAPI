@@ -16,24 +16,28 @@ public class ListController {
     TaskService taskService;
 
     //CREATE task
+    @CrossOrigin
     @PostMapping("/create")
     public TaskList createTask(@RequestBody @Validated TaskList taskList){
         return taskService.createTask(taskList);
     }
 
     //READ tasks
+    @CrossOrigin
     @GetMapping("/read-all")
     public List<TaskList> readAllTasks(){
         return taskService.readAllTasks();
     }
 
     //READ task
+    @CrossOrigin
     @GetMapping("/read-one/{task}")
     public TaskList readTask(@PathVariable (value = "task", required = true) Integer task){
         return taskService.readTask(task);
     }
 
     //UPDATE task
+    @CrossOrigin
     @PutMapping("/update")
     public TaskList updateTask(@RequestBody @Validated TaskList taskList){
         return taskService.updateTask(taskList);
@@ -41,8 +45,10 @@ public class ListController {
 
 
     //DELETE task
+    @CrossOrigin
     @DeleteMapping("/delete/{task}")
     public void deleteTask(@PathVariable (value = "task", required = true) Integer task){
         taskService.deleteTask(task);
     }
+
 }

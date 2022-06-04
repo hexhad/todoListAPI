@@ -59,8 +59,12 @@
 			<version>2.9.2</version>
 		</dependency>
 
-
-
+		<!-- https://mvnrepository.com/artifact/com.allenru/cross-origin -->
+		<dependency>
+			<groupId>com.allenru</groupId>
+			<artifactId>cross-origin</artifactId>
+			<version>1.0.1</version>
+		</dependency>
 
 		<!--END OF IMPORT-->
 	</dependencies>
